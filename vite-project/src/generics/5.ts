@@ -1,7 +1,3 @@
-// Завдання 5
-
-// Виконуйте це завдання у файлі src/generics/5.ts.
-
 // У вас є перелік UserRole, який використовується для класифікації користувачів у вашому додатку. Ви хочете створити об'єкт RoleDescription, який зіставлятиме кожну роль користувача з її описом.
 
 export enum UserRole {
@@ -11,8 +7,12 @@ export enum UserRole {
 }
 
 // Замініть наступний код на версію за допомогою Record
-const RoleDescription = {
-    admin: 'Admin User',
-    editor: 'Editor User',
-    guest: 'Guest User',
+type RoleDescriptionType = Record<UserRole, string>;
+
+const RoleDescription: RoleDescriptionType = {
+    [UserRole.admin]: 'Admin User',
+    [UserRole.editor]: 'Editor User',
+    [UserRole.guest]: 'Guest User',
 };
+
+export {};
