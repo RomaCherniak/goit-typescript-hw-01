@@ -19,6 +19,8 @@ isWeekend1(DayOfWeek.Monday);
 isWeekend1(DayOfWeek.Thursday);
 isWeekend1(DayOfWeek.Saturday);
 
+console.log(isWeekend1(DayOfWeek.Monday))
+
 // Second method
 
 function isWeekend2(day: DayOfWeek): boolean {
