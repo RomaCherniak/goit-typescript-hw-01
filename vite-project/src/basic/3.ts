@@ -3,6 +3,6 @@
 type literalType = 'enable' | 'disable';
 
 let union: string | number;
-let literal: SwitchStatus;
+let literal: literalType;
 
 export {};
